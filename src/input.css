@@ -35,5 +35,5 @@
   }
   
   .bg-animate-slow {
-    animation: bgSlowMove 5s ease-in-out infinite;
+    animation: bgSlowMove 4s ease-in-out infinite;
   }
