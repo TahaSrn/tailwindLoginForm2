@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body
+    class="bg-[url('/src/images/greenBack.png')] bg-cover bg-no-repeat bg-[position:center_20%] w-[100vw] h-[100vh] overflow-hidden bg-animate-slow">
+
+    <input type="checkbox" id="toggleForm" class="hidden peer">
+    <div class="absolute top-0 right-0 flex flex-col items-center h-full w-[60%] bg-gradient-to-r from-white/70 via-white/40 to-white/10
+         transition-all duration-700 transform opacity-100 peer-checked:translate-x-[100%] peer-checked:opacity-0">
+
+        <div class="h-[20%] w-full flex items-end justify-center font-libreB">
+            <h1 class="text-[4vw] text-black/75 let_spc1">WELCOME!</h1>
+        </div>
+
+
+        <form class=" h-[65%] w-[60%] flex flex-col justify-center mt-[3%]" action="#">
+            <!-- for inputs -->
+            <div class="w-full h-[60%] font-libreR ">
+
+                <div
+                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2">
+                    <i class="fa-solid fa-user-ninja text-[2.2vw] text-black/75"></i>
+                    <input type="text" placeholder="Username"
+                        class="placeholder:text-black/70 text-[1.2vw] focus:outline-0 font-[600]">
+                </div>
+                <div
+                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2 mt-[2%]">
+                    <i class="fa-solid fa-envelope text-[2.2vw] text-black/75"></i>
+                    <input type="email" placeholder="Email"
+                        class="placeholder:text-black/70 text-[1.2vw] focus:outline-0 font-[600]">
+                </div>
+                <div
+                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2 mt-[2%]">
+                    <i class="fa-solid fa-shield-halved text-[2.2vw] text-black/75"></i>
+                    <input type="password" placeholder="Password"
+                        class="placeholder:text-black/70 text-[1.2vw] focus:outline-0 font-[600]">
+                </div>
+
+                <div class="w-full h-[20%] flex items-center gap-[3%] mt-[2%] let_spc3">
+                    <input type="checkbox" id="check" class="w-6 h-6">
+                    <label for="check" class="text-[1vw]">By checking this box, I agree to <span class="text-[#18D06E]">
+                            terms of service</span></label>
+                </div>
+            </div>
+            <!-- for buttons -->
+            <div class="w-full h-[30%] flex items-center">
+                <div class="w-1/2 h-1/2 flex justify-center items-center">
+                    <input type="submit" value="SIGN UP"
+                        class="font-libreB text-white bg-[#18D06E] w-2/3 h-3/4 rounded-lg text-[1.4vw] bx_sh hover:scale-110 transition-all duration-300">
+                </div>
+                <div class="w-1/2 h-1/2 flex items-center justify-center let_spc3">
+
+                    <label for="toggleForm"
+                        class="text-white text-[1.3vw] font-libreR hover:text-[#18D06E] transition-all duration-300 hover:scale-110">
+                        Already a member?
+                    </label>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div
+        class="absolute top-0 left-0 flex flex-col items-center h-full w-[60%] bg-gradient-to-r from-white/10 via-white/40 to-white/70
+         transition-all duration-700 transform -translate-x-full opacity-0 peer-checked:translate-x-0 peer-checked:opacity-100">
+        
+        <div class="h-[20%] w-full flex items-end justify-center font-libreB">
+            <h1 class="text-[4vw] text-black/75 let_spc1">WELCOME BACK!</h1>
+        </div>
+
+
+        <form class=" h-[65%] w-[60%] flex flex-col justify-center mt-[3%]" action="#">
+            <!-- for inputs -->
+            <div class="w-full h-[60%] font-libreR ">
+
+                <div
+                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2">
+                    <i class="fa-solid fa-user-ninja text-[2.2vw] text-black/75"></i>
+                    <input type="text" placeholder="Username"
+                        class="placeholder:text-black/70 text-[1.2vw] focus:outline-0 font-[600]">
+                </div>
+
+                <div
+                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2 mt-[2%]">
+                    <i class="fa-solid fa-shield-halved text-[2.2vw] text-black/75"></i>
+                    <input type="password" placeholder="Password"
+                        class="placeholder:text-black/70 text-[1.2vw] focus:outline-0 font-[600]">
+                </div>
+
+                <div class="w-full h-[20%] flex items-center gap-[3%] mt-[2%] let_spc3">
+                    <div class="w-1/2 h-full flex items-center gap-[2%]">
+                        <input type="checkbox" id="check2" class="w-6 h-6 cursor-pointer">
+                        <label for="check2" class="text-[1.2vw] cursor-pointer">Remember me</label>
+                    </div>
+                    <div class="w-1/2 h-full flex items-center">
+                        <a href="#" class="text-[1.1vw] transition-all duration-300 hover:scale-110">
+                            Forgot password?
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- for buttons -->
+            <div class="w-full h-[30%] flex items-center">
+                <div class="w-1/2 h-1/2 flex justify-center items-center">
+                    <input type="submit" value="LOGIN"
+                        class="font-libreB text-white bg-[#18D06E] w-2/3 h-3/4 rounded-lg text-[1.4vw] bx_sh hover:scale-110 transition-all duration-300">
+                </div>
+                <div class="w-1/2 h-1/2 flex items-center justify-center let_spc3">
+
+                    <label for="toggleForm"
+                        class="text-white text-[1.3vw] font-libreR hover:text-[#18D06E] transition-all duration-300 hover:scale-110">
+                        New here? Sign up
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

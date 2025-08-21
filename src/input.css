@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@font-face {
+    font-family: libreB;
+    src: url(/src/fonts/Libre_Franklin/static/LibreFranklin-Bold.ttf);
+}
+@font-face {
+    font-family: libreR;
+    src: url(/src/fonts/Libre_Franklin/static/LibreFranklin-Regular.ttf);
+}
+
+@theme{
+    --font-libreB : "libreB";
+    --font-libreR : "libreR";
+}
+
+@layer utilities{
+    .let_spc1{
+        letter-spacing: 5px;
+    }
+    .let_spc2{
+        letter-spacing: 2px;
+    }
+    .let_spc3{
+        letter-spacing: 3px;
+    }
+    .bx_sh{
+        box-shadow: 0px 13px 7px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes bgSlowMove {
+    0% { background-position: center 20%; }
+    50% { background-position: center 25%; }
+    100% { background-position: center 20%; }
+  }
+  
+  .bg-animate-slow {
+    animation: bgSlowMove 5s ease-in-out infinite;
+  }
