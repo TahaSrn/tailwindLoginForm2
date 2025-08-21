@@ -11,53 +11,59 @@
 
 <body
     class="bg-[url('/src/images/greenBack.png')] bg-cover bg-no-repeat bg-[position:center_20%] w-[100vw] h-[100vh] overflow-hidden bg-animate-slow">
-
+    <!-- Hidden checkbox used as a peer to toggle between signup and login forms -->
     <input type="checkbox" id="toggleForm" class="hidden peer">
-    <div class="absolute top-0 right-0 flex flex-col items-center h-full w-[80%] md:w-[60%] bg-gradient-to-r from-white/70 via-white/40 to-white/10
-         transition-all duration-700 transform opacity-100 peer-checked:translate-x-[100%] peer-checked:opacity-0">
 
+    <!-- Sign Up Form Container -->
+    <div class="absolute top-0 right-0 flex flex-col items-center h-full w-[80%] md:w-[60%] 
+                bg-gradient-to-r from-white/70 via-white/40 to-white/10 transition-all duration-700 
+                transform opacity-100 peer-checked:translate-x-[100%] peer-checked:opacity-0">
+        <!-- Header for welcome message -->
         <div class="h-[20%] w-full flex items-end justify-center font-libreB">
             <h1 class="text-[6vw] md:text-[4vw] text-black/75 let_spc1">WELCOME!</h1>
         </div>
 
-
-        <form class=" h-[65%] w-[85%] md:w-[60%] flex flex-col justify-center mt-[3%]" action="#">
-            <!-- for inputs -->
+        <!-- Sign Up Form -->
+        <form class="h-[65%] w-[85%] md:w-[60%] flex flex-col justify-center mt-[3%]" action="#">
+            <!-- Inputs Container -->
             <div class="w-full h-[60%] font-libreR ">
-
-                <div
-                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2">
+                <!-- Username Input -->
+                <div class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] 
+                            focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2">
                     <i class="fa-solid fa-user-ninja text-[5.5vw] md:text-[2.2vw] text-black/75"></i>
-                    <input type="text" placeholder="Username"
-                        class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
+                    <input type="text" placeholder="Username" class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
                 </div>
-                <div
-                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2 mt-[2%]">
+                <!-- Email Input -->
+                <div class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] 
+                            focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2 mt-[2%]">
                     <i class="fa-solid fa-envelope text-[5.5vw] md:text-[2.2vw] text-black/75"></i>
-                    <input type="email" placeholder="Email"
-                        class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
+                    <input type="email" placeholder="Email" class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
                 </div>
-                <div
-                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2 mt-[2%]">
+                <!-- Password Input -->
+                <div class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] 
+                            focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2 mt-[2%]">
                     <i class="fa-solid fa-shield-halved text-[5.5vw] md:text-[2.2vw] text-black/75"></i>
-                    <input type="password" placeholder="Password"
-                        class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
+                    <input type="password" placeholder="Password" class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
                 </div>
 
+                <!-- Terms Checkbox -->
                 <div class="w-full h-[20%] flex items-center gap-[3%] mt-[2%] let_spc3">
                     <input type="checkbox" id="check" class="w-12 h-12 md:w-6 md:h-6">
-                    <label for="check" class=" text-[3vw] md:text-[1vw]">By checking this box, I agree to <span class="text-[#18D06E]">
-                            terms of service</span></label>
+                    <label for="check" class=" text-[3vw] md:text-[1vw]">
+                        By checking this box, I agree to <span class="text-[#18D06E]">terms of service</span>
+                    </label>
                 </div>
             </div>
-            <!-- for buttons -->
+
+            <!-- Buttons Container -->
             <div class="w-full h-[30%] flex items-center">
+                <!-- Sign Up Submit Button -->
                 <div class="w-1/2 h-1/2 flex justify-center items-center">
                     <input type="submit" value="SIGN UP"
                         class="font-libreB text-white bg-[#18D06E] w-[95%] md:w-2/3 h-3/4 rounded-lg text-[4.2vw] md:text-[1.4vw] bx_sh hover:scale-110 transition-all duration-300">
                 </div>
+                <!-- Toggle to Login Label -->
                 <div class="w-1/2 h-1/2 flex items-center justify-end md:justify-center let_spc3">
-
                     <label for="toggleForm"
                         class="md:ml-0 ml-[25%] text-white text-[3.5vw] md:text-[1.3vw] font-libreR hover:text-[#18D06E] transition-all duration-300 hover:scale-110">
                         Already a member?
@@ -65,35 +71,35 @@
                 </div>
             </div>
         </form>
-
     </div>
-    <div
-        class="absolute top-0 left-0 flex flex-col items-center h-full w-[80%] md:w-[60%] bg-gradient-to-r from-white/10 via-white/40 to-white/70
-         transition-all duration-700 transform -translate-x-full opacity-0 peer-checked:translate-x-0 peer-checked:opacity-100">
-        
+
+    <!-- Login Form Container -->
+    <div class="absolute top-0 left-0 flex flex-col items-center h-full w-[80%] md:w-[60%] 
+                bg-gradient-to-r from-white/10 via-white/40 to-white/70 transition-all duration-700 
+                transform -translate-x-full opacity-0 peer-checked:translate-x-0 peer-checked:opacity-100">
+        <!-- Header for welcome back message -->
         <div class="h-[20%] w-full flex items-end justify-center font-libreB">
             <h1 class="text-[6vw] md:text-[4vw] text-black/75 let_spc1">WELCOME BACK!</h1>
         </div>
 
-
-        <form class=" h-[65%] w-[85%] md:w-[60%] flex flex-col justify-center mt-[3%]" action="#">
-            <!-- for inputs -->
+        <!-- Login Form -->
+        <form class="h-[65%] w-[85%] md:w-[60%] flex flex-col justify-center mt-[3%]" action="#">
+            <!-- Inputs Container -->
             <div class="w-full h-[60%] font-libreR ">
-
-                <div
-                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2">
+                <!-- Username Input -->
+                <div class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] 
+                            focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2">
                     <i class="fa-solid fa-user-ninja text-[5.5vw] md:text-[2.2vw] text-black/75"></i>
-                    <input type="text" placeholder="Username"
-                        class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
+                    <input type="text" placeholder="Username" class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
                 </div>
-
-                <div
-                    class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2 mt-[2%]">
+                <!-- Password Input -->
+                <div class="w-full h-[25%] border-b-[3px] border-b-black/30 flex items-center gap-[3%] 
+                            focus-within:border-b-[#18D06E] transition-all duration-300 let_spc2 mt-[2%]">
                     <i class="fa-solid fa-shield-halved text-[5.5vw] md:text-[2.2vw] text-black/75"></i>
-                    <input type="password" placeholder="Password"
-                        class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
+                    <input type="password" placeholder="Password" class="placeholder:text-black/70 text-[3vw] md:text-[1.2vw] focus:outline-0 font-[600]">
                 </div>
 
+                <!-- Remember Me & Forgot Password -->
                 <div class="w-full h-[20%] flex items-center gap-[3%] mt-[2%] let_spc3">
                     <div class="w-1/2 h-full flex items-center gap-[2%]">
                         <input type="checkbox" id="check2" class="w-8 h-8 md:w-6 md:h-6 cursor-pointer">
@@ -106,14 +112,16 @@
                     </div>
                 </div>
             </div>
-            <!-- for buttons -->
+
+            <!-- Buttons Container -->
             <div class="w-full h-[30%] flex items-center">
+                <!-- Login Submit Button -->
                 <div class="w-1/2 h-1/2 flex justify-center items-center">
                     <input type="submit" value="LOGIN"
                         class="font-libreB text-white bg-[#18D06E] w-[95%] md:w-2/3 h-3/4 rounded-lg text-[4.2vw] md:text-[1.4vw] bx_sh hover:scale-110 transition-all duration-300">
                 </div>
+                <!-- Toggle to Sign Up Label -->
                 <div class="w-1/2 h-1/2 flex items-center justify-center let_spc3">
-
                     <label for="toggleForm"
                         class="md:ml-0 ml-[25%] text-white text-[3.5vw] md:text-[1.3vw] font-libreR hover:text-[#18D06E] transition-all duration-300 hover:scale-110">
                         New here? Sign up
